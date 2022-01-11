@@ -1,7 +1,7 @@
 function ev = ist_create_ev(chos_col,seq_seen)
-%Ev ist di kumulative evidence fuer option 1, fuer jeden step.
-%also [0,1,1,2] bedeutet dass wenn die person yellow (y) gewaehlt hat, dann hat sie zuerst blau (b) gesehen (i.e. 0 y), dann y, dann blau, dann y.
-%D.h. wenn immer sich der zaehler um 1 erhoeht, dann ist das ein neues in favour of the chosen. Wenn es sich nicht erhoeht, dann ist es eine karte der anderen farbe.
+%Ev is the cumulative evidence for option 1, for each step. 
+%E.g.,[0,1,1,2] could mean that a participant first uncovered blue, then yellow and then blue again and finally yellow before choosing yellow.
+%This means, the value increases by 1 if the uncovered colour was the same as the chosen one. If the number does not increase the uncovered colour was different to the chosen one.
 
 ev = zeros(1,length(seq_seen));
 for i= 1:length(seq_seen)
