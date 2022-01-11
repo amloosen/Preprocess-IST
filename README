@@ -1,5 +1,6 @@
 # Preprocessing scripts for the information gathering (information sampling; IST) task used in e.g., Hauser et al. (2017)
 
 -  Save raw data in folder 'PreprocessedData'
--  Run_preproc_ist.m 
+-  run Run_preproc_ist.m 
 -  function 'ist_create_ev' computes the cumulative evidence for the chosen colour
+
